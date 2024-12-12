@@ -1,0 +1,12 @@
+
+services:
+  app:
+    build: .
+    environment:
+      - TZ=America/Mexico_City
+    volumes:
+      - ./database/Afiliados.db:/app/database/Afiliados.db
+      - .:/app
+    command: python main.py
+    stdin_open: true
+    tty: true

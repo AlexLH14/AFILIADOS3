@@ -1,0 +1,7 @@
+*.pyc
+__pycache__/
+*.db
+*.zip
+.git
+.idea
+chromedriver.exe
