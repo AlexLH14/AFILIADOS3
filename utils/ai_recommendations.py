@@ -5,11 +5,11 @@ def generate_recommendation(title, description):
     #co = cohere.Client("An1plkGRHSk5uRBTAsHfBLXh6zeDC66ypTATLpRG")
     co = cohere.Client("ENu8kO7bsExfEaBfJUXksat0BvztlnzzgvhSfftM")
     prompt = (
-        f"Escribe una recomendación personal en español sobre el siguiente libro en línea: {title}. "
+        f"Escribe una recomendación personal sobre el libro '{title}', en español (variación de México). "
         f"Descripción del libro: {description}. "
-        "La recomendación debe estar escrita en español mexico, mostrando entusiasmo y destacando las razones por las que este libro es interesante o útil. "
-        "Incluye una breve opinión personal sobre el contenido y a quién recomendarías este libro. "
-        "Sé auténtico y escribe como si estuvieras recomendándolo a un amigo. Responde únicamente en español."
+        "La recomendación debe ser auténtica y escrita como si estuvieras recomendándola a un amigo. "
+        "Destaca por qué el libro es interesante o útil, incluye una breve opinión personal sobre el contenido, "
+        "y menciona a quién le recomendarías este libro. Sé conciso, directo y no incluyas despedidas ni frases genéricas como 'inserte su nombre'."
     )
 
     try:
